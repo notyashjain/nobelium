@@ -4,6 +4,8 @@ import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
 import BLOG from '@/blog.config'
 
+<h1>Yash</h1>
+
 export async function getStaticProps () {
   const posts = await getAllPosts({ includePages: false })
   const postsToShow = posts.slice(0, BLOG.postsPerPage)
